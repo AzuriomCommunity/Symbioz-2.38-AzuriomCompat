@@ -18,7 +18,7 @@
   <MapKey>649ae451ca33ec53bbcbcc33becf15f4</MapKey>
   <ApLimit>12</ApLimit>
   <MpLimit>6</MpLimit>
-  <Port>5555</Port>
+  <Port>5556</Port>
   <ShowProtocolMessages>True</ShowProtocolMessages>
   <Host>127.0.0.1</Host>
   <SafeRun>False</SafeRun>

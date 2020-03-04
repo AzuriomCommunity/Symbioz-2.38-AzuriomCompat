@@ -292,6 +292,7 @@
     <Compile Include="Models\Parties\AbstractParty.cs" />
     <Compile Include="Models\Parties\ClassicalParty.cs" />
     <Compile Include="Models\Parties\ArenaParty.cs" />
+    <Compile Include="Modules\Azlink.cs" />
     <Compile Include="Modules\MonsterDropFixerModule.cs" />
     <Compile Include="Modules\OtherCommandModule.cs" />
     <Compile Include="Modules\GfxElementsProviderModule.cs" />

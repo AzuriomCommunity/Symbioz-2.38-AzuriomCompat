@@ -13,7 +13,7 @@
   <DatabaseUser>root</DatabaseUser>
   <DatabasePassword></DatabasePassword>
   <DatabaseName>symbioz_auth</DatabaseName>
-  <Port>443</Port>
+  <Port>5555</Port>
   <ShowProtocolMessages>True</ShowProtocolMessages>
   <Host>127.0.0.1</Host>
   <SafeRun>False</SafeRun>
