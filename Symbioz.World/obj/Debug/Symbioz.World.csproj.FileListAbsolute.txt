@@ -165,3 +165,31 @@ C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.World\bin\Debug\Microsoft.Owin.Hosti
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.World\bin\Debug\System.Web.Http.xml
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.World\obj\Debug\Symbioz.World.csproj.CoreCompileInputs.cache
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.World\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\obj\Debug\Symbioz.World.csprojAssemblyReference.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\obj\Debug\Symbioz.World.csproj.CoreCompileInputs.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\obj\Debug\Symbioz.World.exe
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\obj\Debug\Symbioz.World.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.World.exe.manifest
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.World.application
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.World.exe
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.World.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\KeraLua.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\NLua.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\SSync.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.Core.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.ORM.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.Protocol.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.Tools.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\YAXLib.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\MySqlBackup.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\zlib.net.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\SSync.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.Core.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.ORM.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.Protocol.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\Symbioz.Tools.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\YAXLib.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\bin\Debug\YAXLib.xml
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\obj\Debug\Symbioz.World.exe.manifest
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\obj\Debug\Symbioz.World.application
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.World\obj\Debug\Symbioz.World.csproj.CopyComplete

@@ -137,3 +137,25 @@ C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.SqlSync\bin\Debug\Symbioz.Tools.pdb
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.SqlSync\bin\Debug\YAXLib.pdb
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.SqlSync\bin\Debug\YAXLib.xml
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.SqlSync\obj\Debug\Symbioz.SqlSync.csprojResolveAssemblyReference.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\Symbioz.SqlSync.exe.config
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\Symbioz.SqlSync.exe
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\Symbioz.SqlSync.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\MySql.Data.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\SSync.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\Symbioz.Core.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\Symbioz.ORM.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\Symbioz.Tools.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\YAXLib.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\MySqlBackup.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\zlib.net.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\SSync.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\Symbioz.Core.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\Symbioz.ORM.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\Symbioz.Tools.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\YAXLib.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\bin\Debug\YAXLib.xml
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\obj\Debug\Symbioz.SqlSync.csprojAssemblyReference.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\obj\Debug\Symbioz.SqlSync.csproj.CoreCompileInputs.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\obj\Debug\Symbioz.SqlSync.csproj.CopyComplete
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\obj\Debug\Symbioz.SqlSync.exe
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.SqlSync\obj\Debug\Symbioz.SqlSync.pdb

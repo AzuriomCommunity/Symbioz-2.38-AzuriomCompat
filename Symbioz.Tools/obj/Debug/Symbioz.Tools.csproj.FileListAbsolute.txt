@@ -81,3 +81,17 @@ C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.Tools\obj\Debug\Symbioz.Tools.csproj
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.Tools\obj\Debug\Symbioz.Tools.dll
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.Tools\obj\Debug\Symbioz.Tools.pdb
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.Tools\obj\Debug\Symbioz.Tools.csproj.CoreCompileInputs.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\bin\Debug\Symbioz.Tools.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\bin\Debug\Symbioz.Tools.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\bin\Debug\SSync.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\bin\Debug\Symbioz.Core.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\bin\Debug\YAXLib.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\bin\Debug\SSync.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\bin\Debug\Symbioz.Core.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\bin\Debug\YAXLib.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\bin\Debug\YAXLib.xml
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\obj\Debug\Symbioz.Tools.csprojAssemblyReference.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\obj\Debug\Symbioz.Tools.csproj.CoreCompileInputs.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\obj\Debug\Symbioz.Tools.csproj.CopyComplete
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\obj\Debug\Symbioz.Tools.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Tools\obj\Debug\Symbioz.Tools.pdb

@@ -54,3 +54,17 @@ C:\Users\Skinz\Desktop\2.38\Symbioz.ProtocolBuilder\bin\Debug\Symbioz.Core.pdb
 C:\Users\Skinz\Desktop\2.38\Symbioz.ProtocolBuilder\bin\Debug\YAXLib.pdb
 C:\Users\Skinz\Desktop\2.38\Symbioz.ProtocolBuilder\bin\Debug\YAXLib.xml
 C:\Users\Skinz\Desktop\2.38\Symbioz.ProtocolBuilder\obj\Debug\Symbioz.ProtocolBuilder.csprojResolveAssemblyReference.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\bin\Debug\Symbioz.ProtocolBuilder.exe.config
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\bin\Debug\Symbioz.ProtocolBuilder.exe
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\bin\Debug\Symbioz.ProtocolBuilder.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\bin\Debug\Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\bin\Debug\Symbioz.Core.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\bin\Debug\YAXLib.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\bin\Debug\Symbioz.Core.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\bin\Debug\YAXLib.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\bin\Debug\YAXLib.xml
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\obj\Debug\Symbioz.ProtocolBuilder.csprojAssemblyReference.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\obj\Debug\Symbioz.ProtocolBuilder.csproj.CoreCompileInputs.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\obj\Debug\Symbioz.ProtocolBuilder.csproj.CopyComplete
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\obj\Debug\Symbioz.ProtocolBuilder.exe
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.ProtocolBuilder\obj\Debug\Symbioz.ProtocolBuilder.pdb

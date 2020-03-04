@@ -55,3 +55,14 @@ C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.Core\obj\Debug\Symbioz.Core.csprojRe
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.Core\obj\Debug\Symbioz.Core.dll
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.Core\obj\Debug\Symbioz.Core.pdb
 C:\Users\Skinz\Desktop\Symbioz 2.38\Symbioz.Core\obj\Debug\Symbioz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\bin\Debug\Symbioz.Core.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\bin\Debug\Symbioz.Core.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\bin\Debug\MySql.Data.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\bin\Debug\YAXLib.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\bin\Debug\YAXLib.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\bin\Debug\YAXLib.xml
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\obj\Debug\Symbioz.Core.csprojAssemblyReference.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\obj\Debug\Symbioz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\obj\Debug\Symbioz.Core.csproj.CopyComplete
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\obj\Debug\Symbioz.Core.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Core\obj\Debug\Symbioz.Core.pdb
