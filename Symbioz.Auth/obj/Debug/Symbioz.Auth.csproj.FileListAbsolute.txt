@@ -139,3 +139,5 @@ C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Auth\bin\Debug\Symbioz.Prot
 C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Auth\bin\Debug\YAXLib.pdb
 C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Auth\bin\Debug\YAXLib.xml
 C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Auth\obj\Debug\Symbioz.Auth.csproj.CopyComplete
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Auth\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.Auth\bin\Debug\BCrypt.Net-Next.xml

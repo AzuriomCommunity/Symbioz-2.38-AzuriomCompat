@@ -15,6 +15,7 @@ using Symbioz.Protocol.Selfmade.Enums;
 using Symbioz.Core;
 using SSync.IO;
 using SSync.Messages;
+using BCrypt.Net;
 
 
 namespace Symbioz.Auth.Handlers
@@ -40,6 +41,11 @@ namespace Symbioz.Auth.Handlers
             string username = reader.ReadUTF();
             string password = reader.ReadUTF();
             client.AesKey = reader.ReadBytes(32);
+
+            bool json = BCrypt.Net.BCrypt.Verify("AZERTYUIOP", "$2y$10$WvSNt/7pQQvOLq6PanBABeWj/Wr2lVadX.wZ1mBn5CLPk24LjiDrm");
+
+
+
 
             AccountData account = AccountRecord.GetAccountByUsername(username);
 
