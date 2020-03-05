@@ -12,7 +12,7 @@
   <DatabaseHost>127.0.0.1</DatabaseHost>
   <DatabaseUser>root</DatabaseUser>
   <DatabasePassword></DatabasePassword>
-  <DatabaseName>symbioz_auth</DatabaseName>
+  <DatabaseName>final_azuriom</DatabaseName>
   <Port>5555</Port>
   <ShowProtocolMessages>True</ShowProtocolMessages>
   <Host>127.0.0.1</Host>

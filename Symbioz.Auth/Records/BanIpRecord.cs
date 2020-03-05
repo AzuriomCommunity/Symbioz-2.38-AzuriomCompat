@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Symbioz.Auth.Records
 {
-    [Table("BanIps")]
+    [Table("dofus_banips")]
     public class BanIpRecord : ITable
     {
         public static List<BanIpRecord> BanIps = new List<BanIpRecord>();

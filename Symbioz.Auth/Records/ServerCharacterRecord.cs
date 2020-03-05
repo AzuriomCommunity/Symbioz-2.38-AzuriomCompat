@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Symbioz.Auth.Records
 {
-    [Table("ServersCharacters")]
+    [Table("dofus_serverscharacters")]
     public class ServerCharacterRecord : ITable
     {
         public static List<ServerCharacterRecord> ServersCharacters = new List<ServerCharacterRecord>();

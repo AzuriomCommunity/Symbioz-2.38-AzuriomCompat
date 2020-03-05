@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Symbioz.Auth.Records
 {
-    [Table("WorldServers")]
+    [Table("dofus_worldservers")]
     public class ServerRecord : ITable
     {
         public static List<ServerRecord> WorldServers = new List<ServerRecord>();
