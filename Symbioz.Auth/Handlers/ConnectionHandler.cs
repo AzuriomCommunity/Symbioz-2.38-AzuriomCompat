@@ -49,7 +49,7 @@ namespace Symbioz.Auth.Handlers
 
             AccountData account = AccountRecord.GetAccountByUsername(username);
 
-            if (account == null || account.Password != password)
+            if (account == null || !BCrypt.Net.BCrypt.Verify(password, account.Password) )
             {
                 client.Send(new IdentificationFailedMessage((sbyte)IdentificationFailureReasonEnum.WRONG_CREDENTIALS));
                 return;

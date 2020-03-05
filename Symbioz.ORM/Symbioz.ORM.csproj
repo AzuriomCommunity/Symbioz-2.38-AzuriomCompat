@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BeforeSavingAttribute.cs" />
+    <Compile Include="ColumnAttribute.cs" />
     <Compile Include="DatabaseBackupManager.cs" />
     <Compile Include="ORMExtensions.cs" />
     <Compile Include="RemoveWhereIdAttribute.cs" />

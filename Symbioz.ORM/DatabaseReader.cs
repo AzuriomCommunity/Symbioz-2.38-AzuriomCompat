@@ -216,7 +216,10 @@ namespace Symbioz.ORM
         {
 
             DatabaseReader<T> reader = new DatabaseReader<T>();
-            reader.ReadTable(DatabaseManager.GetInstance().UseProvider(), string.Format("SELECT * FROM `{0}` WHERE {1}", reader.m_tableName, condition));
+            if (reader.m_tableName == "users")
+                reader.ReadTable(DatabaseManager.GetInstance().UseProvider(), string.Format("SELECT * FROM users LEFT JOIN dofus_accounts ON users.id = dofus_accounts.Id WHERE users.{0}",condition)); 
+            else reader.ReadTable(DatabaseManager.GetInstance().UseProvider(), string.Format("SELECT * FROM `{0}` WHERE {1}", reader.m_tableName, condition));
+
             return reader.Elements;
 
         }

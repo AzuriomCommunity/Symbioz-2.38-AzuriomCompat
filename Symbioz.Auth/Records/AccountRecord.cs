@@ -9,32 +9,89 @@ using System.Threading.Tasks;
 
 namespace Symbioz.Auth.Records
 {
-    [Table("Accounts", false)]
+    [Table("users", false)]
     public class AccountRecord : ITable
     {
-        [Primary]
+        [Column("id"), Primary]
         public int Id;
 
-        public string Username;
-
-        public string Password;
-
-        [Update]
+        [Column("name"), Update]
         public string Nickname;
 
-        public sbyte Role;
+        [Column("email")]
+        public string Username;
+
+        [Column("email_verified_at")]
+        public string email_verified_at;
+
+        [Column("password")]
+        public string Password;
+
+        [Column("role_id")]
+        public string azuriom_role;
+
+        [Column("money")]
+        public string money;
+
+        [Column("game_id")]
+        public string game_id;
+
+        [Column("access_token")]
+        public string access_token;
+
+        [Column("last_login_ip")]
+        public string last_login_ip;
+
+        [Column("last_login_at")]
+        public string last_login_at;
+
+        [Column("google_2fa_secret")]
+        public string google_2fa_secret;
+
+        [Column("is_banned"), Update]
+        public bool Banned;
+
+        [Column("is_deleted")]
+        public bool is_deleted;
+
+        [Column("remember_token")]
+        public string remember_token;
 
         [Ignore]
         public ServerRoleEnum RoleEnum { get { return (ServerRoleEnum)Role; } }
 
-        [Update]
-        public bool Banned;
+        [Column("created_at")]
+        public string created_at;
 
+        [Column("updated_at")]
+        public string updated_at;
+
+        [Column("id")]
+        public string id_users;
+
+        public sbyte Role;
+
+        
         public sbyte CharacterSlots;
 
         [Update]
         public ushort LastSelectedServerId;
 
+        public AccountRecord(int id, string name, string email, string email_verified_at, string password, 
+            string role_id, string money, string game_id, string access_token, string last_login_ip, string last_login_at,
+            string google_2fa_secret, bool banned, bool is_deleted, string remember_token, string created_at, string updated_at,
+            string id_users,
+            sbyte role, sbyte characterSlots, ushort lastSelectedServerId)
+        {
+            this.Id = id;
+            this.Username = email;
+            this.Password = password;
+            this.Nickname = name;
+            this.Role = role;
+            this.Banned = banned;
+            this.CharacterSlots = characterSlots;
+            this.LastSelectedServerId = lastSelectedServerId;
+        }
 
         public AccountRecord(int id, string username, string password, string nickname, sbyte role,
             bool banned, sbyte characterSlots, ushort lastSelectedServerId)
@@ -59,11 +116,11 @@ namespace Symbioz.Auth.Records
         }
         public static AccountData GetAccountByUsername(string username)
         {
-            return Query("Username", username);
+            return Query("email", username);
         }
         public static AccountData GetAccountByNickname(string nickname)
         {
-            return Query("Nickname", nickname);
+            return Query("name", nickname);
         }
         public static AccountRecord GetAccountRecord(int id)
         {
