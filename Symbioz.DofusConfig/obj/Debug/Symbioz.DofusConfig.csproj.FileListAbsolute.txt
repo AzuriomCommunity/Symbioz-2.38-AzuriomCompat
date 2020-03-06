@@ -8,3 +8,4 @@ C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.DofusConfig\bin\Debug\Symbi
 C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.DofusConfig\obj\Debug\Symbioz.DofusConfig.csproj.CoreCompileInputs.cache
 C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.DofusConfig\obj\Debug\Symbioz.DofusConfig.dll
 C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.DofusConfig\obj\Debug\Symbioz.DofusConfig.pdb
+C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Symbioz.DofusConfig\obj\Debug\Symbioz.DofusConfig.csprojAssemblyReference.cache
