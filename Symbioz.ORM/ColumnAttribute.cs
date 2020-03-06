@@ -9,10 +9,22 @@ namespace Symbioz.ORM
     [System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple = false)]
     public class ColumnAttribute : Attribute
     {
-        public string name;
+        public string Name {
+            get
+            {
+                return this.Name;
+            }
+            set
+            {
+                this.Name = value;
+            }
+        }
+
         public ColumnAttribute(string name)
         {
-            this.name = name;
+            this.Name = name;
         }
+
+        
     }
 }

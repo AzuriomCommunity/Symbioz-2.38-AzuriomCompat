@@ -117,8 +117,30 @@ namespace Symbioz.ORM
             {
                 lock (element)
                 {
-                    var values = this.m_fields.ConvertAll<string>(field => string.Format("{0} = {1}", field.Name, this.GetFieldValue(field, element)));
-                    var command = string.Format(UPDATE_ELEMENTS, this.m_tableName, string.Join(", ", values), this.GetPrimaryField().Name, this.GetPrimaryField().GetValue(element));
+                    var values = this.m_fields.ConvertAll<string>(field => {
+
+
+                        var columnAttribute = field.GetCustomAttributesData();
+                        if(columnAttribute.Count > 0)
+                        {
+                            CustomAttributeData attr = columnAttribute[0];
+                            if(attr.AttributeType.Name == "ColumnAttribute")
+                                return string.Format("{0} = {1}", attr.ConstructorArguments[0].Value, this.GetFieldValue(field, element));
+                        }
+                        
+                        
+                        
+                            
+                        // ConstructorArguments[0].Value
+                        return string.Format("{0} = {1}", field.Name, this.GetFieldValue(field, element));
+                    } );
+                    var command = "";
+                    if(this.m_tableName == "users")
+                    {
+                        var id_user = this.GetPrimaryField().GetValue(element);
+                        command = string.Format("UPDATE users, dofus_accounts SET " + string.Join(", ", values) + " WHERE users.id = {0} AND dofus_accounts.Id = {1}", id_user, id_user);
+                    }
+                    else command = string.Format(UPDATE_ELEMENTS, this.m_tableName, string.Join(", ", values), this.GetPrimaryField().Name, this.GetPrimaryField().GetValue(element));
 
                     this.m_command = new MySqlCommand(command, DatabaseManager.GetInstance().UseProvider());
                     this.m_command.ExecuteNonQuery();
