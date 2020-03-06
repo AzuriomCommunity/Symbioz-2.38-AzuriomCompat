@@ -5,7 +5,6 @@ Symbioz est un émulateur pour DOFUS version 2.38 compatible avec le [CMS Azurio
 ## Prérequis
 
 - Avoir le CMS Azuriom installé et fonctionnel
-- Visual Studio 2015/2017
 - DOFUS 2.38 : https://1fichier.com/?fj0fiha9tb
 
 ## Installation
