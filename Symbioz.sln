@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Symbioz.Core", "Symbioz.Core\Symbioz.Core.csproj", "{06CDF5D1-D0EF-40CC-BDEF-DE9A5FEBAF6B}"
 EndProject
@@ -12,8 +12,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{486619D8-E4D6-4FD0-95FC-7B41892DF07A}"
 	ProjectSection(SolutionItems) = preProject
 		Changelog.txt = Changelog.txt
-		Symbioz.Core\RawData\RawDataManager.cs = Symbioz.Core\RawData\RawDataManager.cs
-		Todo.txt = Todo.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSync", "SSync\SSync.csproj", "{0B63944E-85CB-4CEE-8276-17C9379ADABE}"
@@ -109,5 +107,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {940E8410-6484-4EE4-AD55-28E451F1793C}
 	EndGlobalSection
 EndGlobal

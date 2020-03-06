@@ -353,3 +353,7 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
+!Symbioz.Protocol/Messages/debug
+
+!Symbioz.Auth/bin/Debug/SWF/auth.swf
+!Symbioz.Auth/bin/Debug/auth.xml
