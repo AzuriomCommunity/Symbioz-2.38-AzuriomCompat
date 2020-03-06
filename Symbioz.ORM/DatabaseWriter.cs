@@ -125,7 +125,15 @@ namespace Symbioz.ORM
                         {
                             CustomAttributeData attr = columnAttribute[0];
                             if(attr.AttributeType.Name == "ColumnAttribute")
-                                return string.Format("{0} = {1}", attr.ConstructorArguments[0].Value, this.GetFieldValue(field, element));
+                            {
+                                var fieldValue = this.GetFieldValue(field, element);
+                                var fieldName = attr.ConstructorArguments[0].Value;
+                                if ((string) fieldName == "is_banned")
+                                    fieldValue = fieldValue == "'False'" ? "'0'" : "'1'";
+
+                                return string.Format("{0} = {1}", fieldName, fieldValue);
+                            }
+                                
                         }
                         
                         
@@ -138,6 +146,10 @@ namespace Symbioz.ORM
                     if(this.m_tableName == "users")
                     {
                         var id_user = this.GetPrimaryField().GetValue(element);
+                        
+
+                        
+                            
                         command = string.Format("UPDATE users, dofus_accounts SET " + string.Join(", ", values) + " WHERE users.id = {0} AND dofus_accounts.Id = {1}", id_user, id_user);
                     }
                     else command = string.Format(UPDATE_ELEMENTS, this.m_tableName, string.Join(", ", values), this.GetPrimaryField().Name, this.GetPrimaryField().GetValue(element));

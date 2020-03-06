@@ -42,11 +42,6 @@ namespace Symbioz.Auth.Handlers
             string password = reader.ReadUTF();
             client.AesKey = reader.ReadBytes(32);
 
-            bool json = BCrypt.Net.BCrypt.Verify("AZERTYUIOP", "$2y$10$WvSNt/7pQQvOLq6PanBABeWj/Wr2lVadX.wZ1mBn5CLPk24LjiDrm");
-
-
-
-
             AccountData account = AccountRecord.GetAccountByUsername(username);
 
             if (account == null || !BCrypt.Net.BCrypt.Verify(password, account.Password) )

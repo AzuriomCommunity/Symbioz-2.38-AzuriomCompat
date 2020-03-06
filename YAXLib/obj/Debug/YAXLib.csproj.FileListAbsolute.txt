@@ -17,4 +17,3 @@ C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\Bin\YAXLib.pdb
 C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\YAXLib\obj\Debug\YAXLib.csproj.CoreCompileInputs.cache
 C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\YAXLib\obj\Debug\YAXLib.dll
 C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\YAXLib\obj\Debug\YAXLib.pdb
-C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\YAXLib\obj\Debug\YAXLib.csprojAssemblyReference.cache
