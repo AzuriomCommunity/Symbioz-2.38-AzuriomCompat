@@ -9,7 +9,7 @@ Symbioz est un émulateur pour DOFUS version 2.38 compatible avec le [CMS Azurio
 
 ## Installation
 
-- Télécharger le [Serveur Auth](https://github.com/Javdu10/Symbioz-2.38/releases/latest/download/Auth.zip), le [Serveur World](https://github.com/Javdu10/Symbioz-2.38/releases/latest/download/World.zip) ainsi que la [base de donnée world](https://github.com/Javdu10/Symbioz-2.38/releases/latest/download/symbioz_world.sql.gz)
+- Télécharger le [Serveur Auth](https://github.com/AzuriomCommunity/Symbioz-2.38/releases/latest/download/Auth.zip), le [Serveur World](https://github.com/AzuriomCommunity/Symbioz-2.38/releases/latest/download/World.zip) ainsi que la [base de donnée world](https://github.com/AzuriomCommunity/Symbioz-2.38/releases/latest/download/symbioz_world.sql.gz)
 
 Dans Auth\auth.xml configurez ces champs :
 ```xml
