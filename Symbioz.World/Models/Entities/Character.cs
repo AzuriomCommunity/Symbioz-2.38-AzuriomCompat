@@ -72,7 +72,7 @@ namespace Symbioz.World.Models.Entities
             }
         }
 
-
+        
         public BreedRecord Breed
         {
             get
@@ -1445,6 +1445,11 @@ namespace Symbioz.World.Models.Entities
         public void ReadDocument(ushort documentId)
         {
             this.OpenDialog(new BookDialog(this, documentId));
+        }
+
+        public void OpenShopStockExchange()
+        {
+            this.OpenDialog(new ShopStockExchange(this));
         }
 
         public bool AddKamas(int value)

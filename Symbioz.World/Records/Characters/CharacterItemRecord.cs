@@ -117,6 +117,11 @@ namespace Symbioz.World.Records.Characters
             return newItem;
         }
 
+        public static CharacterItemRecord GetItemByUID(int itemUID)
+        {
+            return CharacterItemRecord.CharactersItems.Find(x => x.UId == itemUID);
+        }
+
         public bool CanBeExchanged()
         {
             return !IsValidMountCertificate;
