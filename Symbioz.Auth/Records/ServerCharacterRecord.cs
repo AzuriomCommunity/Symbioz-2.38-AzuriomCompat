@@ -11,7 +11,7 @@ namespace Symbioz.Auth.Records
     [Table("dofus_serverscharacters")]
     public class ServerCharacterRecord : ITable
     {
-        public static List<ServerCharacterRecord> ServersCharacters = new List<ServerCharacterRecord>();
+        public static List<ServerCharacterRecord> dofus_serverscharacters = new List<ServerCharacterRecord>();
 
         [Primary]
         public ulong Id;
@@ -36,34 +36,34 @@ namespace Symbioz.Auth.Records
 
         public static sbyte GetCharactersCount(int serverId, int accountId)
         {
-            return (sbyte)ServersCharacters.FindAll(x => x.ServerId == serverId && x.AccountId == accountId).Count;
+            return (sbyte)dofus_serverscharacters.FindAll(x => x.ServerId == serverId && x.AccountId == accountId).Count;
         }
         public static ushort[] GetAccountActiveServers(int accountId)
         {
-            return ServersCharacters.FindAll(x => x.AccountId == accountId).ConvertAll<ushort>(x => x.ServerId).Distinct().ToArray();
+            return dofus_serverscharacters.FindAll(x => x.AccountId == accountId).ConvertAll<ushort>(x => x.ServerId).Distinct().ToArray();
         }
 
         public static bool Add(long characterId, int accountId, ushort serverId)
         {
-            ulong id = ServersCharacters.DynamicPop(x => x.Id);
+            ulong id = dofus_serverscharacters.DynamicPop(x => x.Id);
 
-            if (ServersCharacters.Find(x => x.ServerId == serverId && x.AccountId == accountId && x.CharacterId == characterId) != null)
+            if (dofus_serverscharacters.Find(x => x.ServerId == serverId && x.AccountId == accountId && x.CharacterId == characterId) != null)
                 return false;
             new ServerCharacterRecord(id, characterId, accountId, serverId).AddInstantElement<ServerCharacterRecord>();
             return true;
         }
         public static void ResetServer(ushort serverId)
         {
-            var serversCharacters = ServersCharacters.FindAll(x => x.ServerId == serverId);
+            var serverscharacters = dofus_serverscharacters.FindAll(x => x.ServerId == serverId);
 
-            foreach (var sCharacter in serversCharacters)
+            foreach (var sCharacter in serverscharacters)
             {
                 sCharacter.RemoveInstantElement<ServerCharacterRecord>();
             }
         }
         public static bool DeleteCharacter(long characterId, ushort serverId)
         {
-            var serverCharacter = ServersCharacters.Find(x => x.CharacterId == characterId && x.ServerId == serverId);
+            var serverCharacter = dofus_serverscharacters.Find(x => x.CharacterId == characterId && x.ServerId == serverId);
             if (serverCharacter == null)
                 return false;
             try

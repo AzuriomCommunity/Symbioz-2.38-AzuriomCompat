@@ -15,7 +15,7 @@ namespace Symbioz.ORM
         // FIELDS
         private const short MAX_ADDING_LINES = 250;
 
-        private const string ADD_ELEMENTS = "INSERT INTO `{0}` VALUES\n{1}";
+        private const string ADD_ELEMENTS = "INSERT INTO `{0}` VALUES {1}";
         private const string UPDATE_ELEMENTS = "UPDATE `{0}` SET {1} WHERE `{2}` = {3}";
         private const string REMOVE_ELEMENTS = "DELETE FROM `{0}` WHERE `{1}` = {2}";
 

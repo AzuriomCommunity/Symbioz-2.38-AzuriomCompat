@@ -13,7 +13,7 @@ namespace Symbioz.Auth.Records
     [Table("dofus_worldservers")]
     public class ServerRecord : ITable
     {
-        public static List<ServerRecord> WorldServers = new List<ServerRecord>();
+        public static List<ServerRecord> dofus_worldservers = new List<ServerRecord>();
 
         [Primary]
         public ushort Id;
@@ -48,15 +48,25 @@ namespace Symbioz.Auth.Records
         }
         public static GameServerInformations[] GetGameServerInformations(AccountData account)
         {
-            return WorldServers.ConvertAll<GameServerInformations>(x => x.GetServerInformations(account)).ToArray();
+            return dofus_worldservers.ConvertAll<GameServerInformations>(x => x.GetServerInformations(account)).ToArray();
         }
         public static ServerRecord GetWorldServer(ushort id)
         {
-            return WorldServers.Find(x => x.Id == id);
+            return dofus_worldservers.Find(x => x.Id == id);
         }
         public static void SetServerStatus(ushort serverId,ServerStatusEnum status)
         {
-            GetWorldServer(serverId).Status = status;
+            var server = GetWorldServer(serverId);
+            if (server != null)
+              server.Status = status;
+            else
+            {
+                server = DatabaseReader<ServerRecord>.ReadFirst("`Id` = " + serverId);
+                server.Status = status;
+                dofus_worldservers.Add(server);
+            }
+            
+            //TODO : On first launch server == null
         }
         public static void AddWorldServer(ServerRecord server)
         {
@@ -64,10 +74,10 @@ namespace Symbioz.Auth.Records
         }
         public static bool CanBeAdded(ServerRecord server)
         {
-            var record = WorldServers.Find(x => x.Id == server.Id);
+            var record = dofus_worldservers.Find(x => x.Id == server.Id);
             if (record != null)
                 return false;
-            record = WorldServers.Find(x => x.Host == server.Host && x.Port == server.Port);
+            record = dofus_worldservers.Find(x => x.Host == server.Host && x.Port == server.Port);
             if (record != null)
                 return false;
 

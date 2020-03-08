@@ -151,6 +151,7 @@ namespace Symbioz.Auth.Records
         }
         public static void UpdateAccount(AccountData account)
         {
+            DatabaseManager.GetInstance().Query(string.Format("INSERT INTO dofus_accounts(`Id`, `Role`, `CharacterSlots`, `LastSelectedServerId`) VALUES('{0}', '{1}', '{2}', '{3}') ON DUPLICATE KEY UPDATE `Role`='{4}', `CharacterSlots`='{5}', `LastSelectedServerId`='{6}'", account.Id, (sbyte)account.Role, account.CharacterSlots, account.LastSelectedServerId, (sbyte)account.Role, account.CharacterSlots, account.LastSelectedServerId), DatabaseManager.GetInstance().UseProvider());
             ToAccountRecord(account).UpdateInstantElement<AccountRecord>();
         }
     }

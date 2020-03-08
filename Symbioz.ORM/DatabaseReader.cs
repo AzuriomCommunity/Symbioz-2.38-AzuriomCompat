@@ -196,7 +196,19 @@ namespace Symbioz.ORM
                     continue;
                 }
 
-                try { obj[i] = Convert.ChangeType(obj[i], this.m_fields[i].FieldType); }
+                try {
+                    if (this.m_fields[i].Name == "Role" && obj[i] == DBNull.Value)
+                        obj[i] = (sbyte)1;
+                    else if (this.m_fields[i].Name == "CharacterSlots" && obj[i] == DBNull.Value)
+                        obj[i] = (sbyte)5;
+                    else if (this.m_fields[i].Name == "LastSelectedServerId" && obj[i] == DBNull.Value)
+                        obj[i] = (ushort)1;
+                    else if (this.m_fields[i].Name == "id_users")
+                        obj[i] = obj[0].ToString();
+                    
+                    else obj[i] = Convert.ChangeType(obj[i], this.m_fields[i].FieldType);
+                    
+                }
                 catch
                 {
                     string exception = string.Format("Unknown constructor for '{0}', ({1}) if its an XmlField, FieldType must got empty constructor.", this.m_fields[i].FieldType.Name, this.m_fields[i].Name);
