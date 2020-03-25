@@ -34,40 +34,30 @@ namespace Symbioz.World.Models.Exchanges
 
         public override void MoveItem(uint uid, int quantity)
         {
-            if (CharacterMerchantItemRecord.InMerchantList(uid, this.Character.Id))
+            if(quantity < 0)
             {
-                var m_itemsList = CharacterMerchantItemRecord.GetCharacterItems(this.Character.Id);
-                var m_item = m_itemsList.Find(item => item.UId == uid);
-                
-                if(m_item.Quantity + quantity <= 0)
+                CharacterMerchantItemRecord item = CharacterMerchantItemRecord.CharactersMerchantsItems.Find(x => x.UId == uid);
+                if (item == null)
                 {
-                    CharacterMerchantItemRecord.CharactersMerchantsItems.Remove(m_item);
-                    var inv_item = this.Character.Inventory.GetItem(uid);
+                    Character.OnExchangeError(ExchangeErrorEnum.SELL_ERROR);
+                    return;
+                }                   
 
-                    if(inv_item == null)
-                        this.Character.Inventory.AddItem(m_item.ToCharacterItemRecord());
-                    else inv_item.Quantity = (uint)(inv_item.Quantity - quantity);
-
-                    this.Character.Client.Send(new ExchangeShopStockMovementRemovedMessage(m_item.UId));
-                    this.Character.Inventory.Refresh();
-
+                if (item.Quantity <= Math.Abs(quantity)) // on retire tout les items
+                {
+                    item.RemoveElement();
+                    CharacterMerchantItemRecord.CharactersMerchantsItems.Remove(item);
+                    Character.Inventory.AddItem(item.ToCharacterItemRecord());
+                    Character.Client.Send(new ExchangeShopStockMovementRemovedMessage(item.UId));
                 }
                 else
                 {
-                    m_item.Quantity = (uint)(m_item.Quantity + quantity);
-                    var inv_item = this.Character.Inventory.GetItem(uid);
-                    if (inv_item == null)
-                    {
-                        
-                        this.Character.Inventory.AddItem(m_item.ToCharacterItemRecord());
-                        this.Character.Client.Send(new ExchangeShopStockMovementUpdatedMessage(new ObjectItemToSell(m_item.GId, m_item.GetObjectEffects(), m_item.UId, (uint)quantity, m_item.Price)));
-                        this.Character.Inventory.Refresh();
-
-                    }
-                    else
-                    {
-                        var x = 1; // TODO: item is in inventory, and in stockshop, but delete only some item, not all
-                    }
+                    item.Quantity -= (uint) Math.Abs(quantity);
+                    item.UpdateElement();
+                    CharacterItemRecord inv_item = item.ToCharacterItemRecord();
+                    inv_item.Quantity = (uint)Math.Abs(quantity);
+                    this.Character.Inventory.AddItem(inv_item);
+                    this.Character.Client.Send(new ExchangeShopStockMovementUpdatedMessage(new ObjectItemToSell(item.GId, item.GetObjectEffects(), item.UId, item.Quantity, item.Price)));
                 }
 
             }
@@ -76,30 +66,15 @@ namespace Symbioz.World.Models.Exchanges
 
         public void MoveItemPriced(uint uid, uint quantity, uint price)
         {
-            var c_item = this.Character.Inventory.GetItem(uid);
-
-            this.Character.Inventory.RemoveItem(uid, quantity);
-            var item = CharacterMerchantItemRecord.CharactersMerchantsItems.Find(it => it.UId == uid && it.CharacterId == this.Character.Id);
-            if (item == null)
+            CharacterItemRecord c_item = Character.Inventory.GetItem(uid);
+            if (c_item != null && c_item.Quantity >= quantity && c_item.CanBeExchanged())
             {
-                item = new CharacterMerchantItemRecord(c_item, quantity, price);
-                CharacterMerchantItemRecord.CharactersMerchantsItems.Add(item);
-            }else {
-                item = CharacterMerchantItemRecord.CharactersMerchantsItems.Find(it => it.UId == uid && it.CharacterId == this.Character.Id && it.Price == price);
-                if (item == null)
-                {
-                    item = new CharacterMerchantItemRecord(c_item.CloneWithoutUID(), this.Character.Id, price) ;
-                    item.Quantity = quantity;
-                    CharacterMerchantItemRecord.CharactersMerchantsItems.Add(item);
-                }
-                else
-                {
-                    item.Quantity += quantity;
-                }
+                this.Character.Inventory.RemoveItem(uid, quantity);
+
+                CharacterMerchantItemRecord selledItem = new CharacterMerchantItemRecord(c_item, quantity, price);
+                selledItem.AddElement();
+                this.Character.Client.Send(new ExchangeShopStockMovementUpdatedMessage(new ObjectItemToSell(selledItem.GId, selledItem.GetObjectEffects(), selledItem.UId, selledItem.Quantity, selledItem.Price)));
             }
-            
-            this.Character.Client.Character.Inventory.Refresh();
-            this.Character.Client.Send(new ExchangeShopStockMovementUpdatedMessage(new ObjectItemToSell(item.GId, item.GetObjectEffects(), item.UId, item.Quantity, item.Price)));
         }
 
         public override void MoveKamas(int quantity)
@@ -124,6 +99,23 @@ namespace Symbioz.World.Models.Exchanges
         public override void Ready(bool ready, ushort step)
         {
             throw new NotImplementedException();
+        }
+
+        public void ModifyItemPriced(uint uid, int quantity, uint price)
+        {
+            CharacterMerchantItemRecord item = CharacterMerchantItemRecord.CharactersMerchantsItems.Find(x => x.UId == uid);
+
+            if (item != null)
+            {
+                if(price > 0)
+                    item.Price = price;
+                item.UpdateElement();
+                this.Character.Client.Send(new ExchangeShopStockMovementUpdatedMessage(new ObjectItemToSell(item.GId, item.GetObjectEffects(), item.UId, item.Quantity, item.Price)));
+            }
+            else
+            {
+                Character.OnExchangeError(ExchangeErrorEnum.SELL_ERROR);
+            }
         }
 
     }

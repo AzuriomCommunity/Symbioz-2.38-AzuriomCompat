@@ -17,10 +17,11 @@ namespace Symbioz.World.Records.Characters
 
         [Update]
         public long CharacterId;
+        [Update]
         public uint Price;
 
-        public CharacterMerchantItemRecord(long characterId, uint uid, ushort gid, byte position,
-            uint quantity, List<Effect> effects, ushort appearanceId, uint price)
+        public CharacterMerchantItemRecord(long characterId, uint price, uint uid, ushort gid, byte position,
+            uint quantity, List<Effect> effects, ushort appearanceId)
         {
             this.UId = uid;
             this.GId = gid;
@@ -34,7 +35,7 @@ namespace Symbioz.World.Records.Characters
 
         public CharacterMerchantItemRecord (CharacterItemRecord item,uint quantity, uint price)
         {
-            this.UId = item.UId;
+            this.UId = ItemUIdPopper.PopUID();
             this.GId = item.GId;
             this.Position = item.Position;
             this.CharacterId = item.CharacterId;
@@ -76,12 +77,12 @@ namespace Symbioz.World.Records.Characters
 
         public override AbstractItem CloneWithUID()
         {
-            return new CharacterMerchantItemRecord(CharacterId, UId, GId, Position, Quantity, new List<Effect>(Effects), AppearanceId, Price);
+            return new CharacterMerchantItemRecord(CharacterId, Price, UId, GId, Position, Quantity, new List<Effect>(Effects), AppearanceId);
         }
 
         public override AbstractItem CloneWithoutUID()
         {
-            return new CharacterMerchantItemRecord(CharacterId, ItemUIdPopper.PopUID(), GId, Position, Quantity, new List<Effect>(Effects), AppearanceId, Price);
+            return new CharacterMerchantItemRecord(CharacterId, Price, ItemUIdPopper.PopUID(), GId, Position, Quantity, new List<Effect>(Effects), AppearanceId);
         }
 
         public CharacterItemRecord ToCharacterItemRecord()

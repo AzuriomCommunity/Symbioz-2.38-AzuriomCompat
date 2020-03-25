@@ -69,6 +69,9 @@ namespace Symbioz.World.Handlers.RolePlay.Exchanges
             if (client.Character.IsInExchange(ExchangeTypeEnum.BIDHOUSE_SELL))
             {
                 client.Character.GetDialog<SellExchange>().ModifyItemPriced(message.objectUID, message.quantity, message.price);
+            }else if (client.Character.IsInExchange(ExchangeTypeEnum.SHOP_STOCK))
+            {
+                client.Character.GetDialog<ShopStockExchange>().ModifyItemPriced(message.objectUID, message.quantity, message.price);
             }
         }
         [MessageHandler]
