@@ -30,7 +30,7 @@ Dans World\world.xml configurez ces champs :
   <DatabasePassword></DatabasePassword>
   <DatabaseName>symbioz_world</DatabaseName>
 ```
-- Connectez vous a votre base de donnée, créez une nouvelle base de données, nommez la "symbioz_world" puis importez le script symbioz_world.sql.gz
+- Connectez vous a votre base de donnée, créez une nouvelle base de données, nommez la "symbioz_world" puis importez le script symbioz_world.sql.gz qui se trouve dans __script_SQL
 
 - Connectez vous à votre panel Admin Azuriom puis installez le plugin Dofus qui se trouve dans la section "Plugins"
 

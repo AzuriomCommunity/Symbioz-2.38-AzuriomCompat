@@ -124,6 +124,7 @@
     <Compile Include="Handlers\RolePlay\Commands\CommandsHandler.cs" />
     <Compile Include="Handlers\RolePlay\Commands\CommandsRepertory.cs" />
     <Compile Include="Handlers\RolePlay\Exchanges\ExchangesHandler.cs" />
+    <Compile Include="Handlers\RolePlay\Exchanges\MerchantHandler.cs" />
     <Compile Include="Handlers\RolePlay\Guilds\GuildsHandler.cs" />
     <Compile Include="Handlers\RolePlay\HavenBag\HeavenBagHandler.cs" />
     <Compile Include="Handlers\RolePlay\Idols\IdolsHandler.cs" />
@@ -192,6 +193,7 @@
     <Compile Include="Models\Exchanges\AbstractCraftExchange.cs" />
     <Compile Include="Models\Exchanges\BuyExchange.cs" />
     <Compile Include="Models\Exchanges\CraftExchange.cs" />
+    <Compile Include="Models\Exchanges\ShopStockExchange.cs" />
     <Compile Include="Models\Exchanges\SmithMagicExchange.cs" />
     <Compile Include="Models\Exchanges\SellExchange.cs" />
     <Compile Include="Models\Fights\Damages\Damage.cs" />
@@ -563,6 +565,7 @@
     <Compile Include="Records\AccountInformationsRecord.cs" />
     <Compile Include="Models\Entities\Jobs\CharacterJob.cs" />
     <Compile Include="Records\Almanach\AlmanachRecord.cs" />
+    <Compile Include="Records\Characters\CharacterMerchantItemRecord.cs" />
     <Compile Include="Records\Characters\CharacterMountRecord.cs" />
     <Compile Include="Records\Characters\NotificationRecord.cs" />
     <Compile Include="Records\Characters\StartupActionRecord.cs" />
@@ -674,9 +677,9 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
-xcopy /s /y "$(SolutionDir)\packages\NLua.1.4.29\lib\net45" "$(TargetDir)"
+xcopy /s /y "$(SolutionDir)\packages\NLua.1.3.2.1\lib\native\*.*" "$(TargetDir)"
 xcopy /s /y "$(ProjectDir)toMovePostBuild" "$(TargetDir)"
-xcopy /s /y "C:\Users\Jav\Desktop\Dofus\2.38\Symbioz-2.38\packages\NLua.1.3.2.1\lib\native\*.*" "$(TargetDir)"</PostBuildEvent>
+</PostBuildEvent>
   </PropertyGroup>
   <Import Project="..\packages\KeraLua.1.0.26\build\net45\KeraLua.targets" Condition="Exists('..\packages\KeraLua.1.0.26\build\net45\KeraLua.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
